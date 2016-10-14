@@ -1,25 +1,13 @@
 import { Component } from '@angular/core';
+import { DatabindingComponent } from './databinding'
 
 @Component({
   selector: 'app-root',
   template: `
-      <h1>Inline template</h1>
-      <fa-other></fa-other>
-      <fa-another>
-        <div>
-          <h1>Hello!</h1>
-          <p>World!</p>
-        </div>
-      </fa-another>
-      <fa-another>
-        <p>Something else</p>
-      </fa-another>
+      <h1>Root Component</h1>
+      <fa-databinding></fa-databinding>
   `,
-  styles: [`
-    h1 {
-      color: red;
-    }
-  `]
+  styles: []
 })
 export class AppComponent {
   title = 'app works!';
